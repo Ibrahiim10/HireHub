@@ -5,11 +5,14 @@ import Jobs from './pages/Jobs';
 import JobDetails from './pages/JobDetails';
 import Signin from './pages/Signin';
 import Signup from './pages/Signup';
+import Footer from './components/Footer';
+import Header from './components/Header';
 
 const App = () => {
   return (
     <div>
       {/* header */}
+      <Header />
       <main>
         {/* routes */}
         <Routes>
@@ -25,6 +28,7 @@ const App = () => {
         </Routes>
       </main>
       {/* footer */}
+      <Footer />
     </div>
   );
 };
