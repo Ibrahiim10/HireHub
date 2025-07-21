@@ -1,12 +1,63 @@
-# React + Vite
+# 🧑‍💼 HireHub – Job Board Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+HireHub is a full-featured Job Board platform where Recruiters and Employers can post jobs, and Job Seekers can apply for them. Built with **React** and **Supabase**, it includes real-time updates, role-based dashboards, and dynamic job management.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+### 👥 User Roles
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Admin**: Manage all users, jobs, and applications.
+- **Recruiter / Employer**: Post jobs, manage applications, view stats.
+- **Job Seeker**: Browse jobs, apply, and track application status.
+
+### 🧰 Functionality
+
+- 🔐 Authentication (Email/Password via Supabase)
+- 📝 Rich job posting form with [Quill.js] editor
+- 📍 Auto-detect recruiter location by IP
+- 🗂️ Role-based dashboards with real-time notifications
+- 📊 Admin analytics: charts, counters, and user/job metrics
+- 🌍 Country selector with flags using `react-select-country-list`
+- 💬 Notifications system (read/unread, per-role access)
+- 🔄 Real-time updates (applications, jobs, notifications)
+
+---
+
+## 🖥️ Tech Stack
+
+| Tech               | Description                           |
+| ------------------ | ------------------------------------- |
+| ⚛️ React           | Frontend UI                           |
+| 🧪 Supabase        | Backend (Auth, DB, Realtime, RLS)     |
+| 📦 React Select    | Country & Job type dropdowns          |
+| 📜 Quill           | Rich text editor for job descriptions |
+| 🧭 React Router    | Page routing                          |
+| 🔔 React Hot Toast | Alerts and notifications              |
+
+---
+
+## 📸 Screenshots
+
+### 🧑‍💼Admin Dashboard
+
+![Admin Dashboard](src/assets/AdminDashboard.png)
+
+### 📄 Post Job
+
+![Post Job](src/assets/postjob.png)
+
+### 🏠 Home Page
+
+![Home Page](src/assets/homepage.png)
+
+🛡️ Role-Based Access
+Role Access
+Admin All users, jobs, and notifications
+Recruiter Post jobs, view applicants
+Employer Same as recruiter (optional separation)
+User Apply for jobs, manage applications
+
+🧑‍💻 Author
+Built with ❤️ by Ibrahim Buthul
