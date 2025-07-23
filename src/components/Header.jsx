@@ -34,7 +34,12 @@ const Header = () => {
         <div className="flex justify-between h-16">
           {/* Left */}
           <div className="flex">
-            <div className="flex-shrink-0 flex items-center">
+            <div className="flex-shrink-0 flex items-center space-x-2">
+              <img
+                className="h-18 w-auto"
+                src="/src/assets/hire.png"
+                alt="HireHub Logo"
+              />
               <NavLink to="/" className="text-blue-600 text-2xl font-bold">
                 Hire<span className="text-green-950">Hub</span>
               </NavLink>
